@@ -81,3 +81,82 @@ double multiply(double a, double b) {
 double divide(double a, double b) {
     return a / b;
 }
+
+
+// // using switch case
+
+
+// #include <iostream>
+
+// using namespace std;
+
+// int main() {
+//     char operatorSymbol;
+//     double num1, num2;
+
+//     cout << "Enter an operator (+, -, *, /): ";
+//     cin >> operatorSymbol;
+
+//     cout << "Enter two numbers: ";
+//     cin >> num1 >> num2;
+
+//     switch (operatorSymbol) {
+//         case '+':
+//             cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
+//             break;
+//         case '-':
+//             cout << num1 << " - " << num2 << " = " << num1 - num2 << endl;
+//             break;
+//         case '*':
+//             cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
+//             break;
+//         case '/':
+//             if (num2 == 0) {
+//                 cout << "Error: Division by zero!" << endl;
+//             } else {
+//                 cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+//             }
+//             break;
+//         default:
+//             cout << "Invalid operator!" << endl;
+//     }
+
+//     return 0;
+// }
+
+
+// //  if else statement
+
+
+// #include <iostream>
+
+// using namespace std;
+
+// int main() {
+//     char operatorSymbol;
+//     double num1, num2;
+
+//     cout << "Enter an operator (+, -, *, /): ";
+//     cin >> operatorSymbol;
+
+//     cout << "Enter two numbers: ";
+//     cin >> num1 >> num2;
+
+//     if (operatorSymbol == '+') {
+//         cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
+//     } else if (operatorSymbol == '-') {
+//         cout << num1 << " - " << num2 << " = " << num1 - num2 << endl;
+//     } else if (operatorSymbol == '*') {
+//         cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
+//     } else if (operatorSymbol == '/') {
+//         if (num2 == 0) {
+//             cout << "Error: Division by zero!" << endl;
+//         } else {
+//             cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+//         }
+//     } else {
+//         cout << "Invalid operator!" << endl;
+//     }
+
+//     return 0;
+// }
