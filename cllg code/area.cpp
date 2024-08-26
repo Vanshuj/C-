@@ -1,10 +1,10 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-#define PI 3.14159     
+// #define PI 3.14159     
 
 //  ## area of circle
-
+const double PI = 3.141592653589793;
 
 // int main() {
 //     double radius;
@@ -12,7 +12,7 @@ using namespace std;
 //     cin >> radius;
 
   
-//     double area =   2 * PI * radius * radius;
+//     double area =    PI * radius * radius;
 
     
 //     cout << "The area of the circle with radius " << radius << " is " << area << endl;
@@ -32,8 +32,8 @@ using namespace std;
 
     
 //     circumference = 2 * PI * radius;
-//     cout << "The area of the circle is: " << circumference
-//      << endl;
+//     cout << "The circumference of the circle is: " << circumference<< endl;
+     
     
 //     return 0;
 // }
