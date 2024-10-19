@@ -1,5 +1,5 @@
 /*
-#include <iostream>
+#include<iostream>
 using namespace std;
  
 class vector
@@ -40,7 +40,7 @@ int main()
 
 
 
-#include <iostream>
+#include<iostream>
 using namespace std;
  
 template <class T>
