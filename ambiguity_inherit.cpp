@@ -27,7 +27,7 @@ class Derived : public Base1, public Base2{
 
 
 int main(){
-  // Ambibuity 1
+  // Ambiguity 1
      Base1 base1obj;
      Base2 base2obj;
      base1obj.greet();
