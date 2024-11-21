@@ -124,25 +124,77 @@
 
 
 
+// #include<stdio.h>
+// #include<math.h>
+// int power(int,int);
+// void main()
+// {
+//     int p,x,y;
+//     printf("Enter the values of x anf y\n");
+//     scanf("%d,%d",&x,&y);
+//     p=power(x,y);
+//     printf("%d is answer",p);
+// }
+// int power(int n,int m)
+// {
+//     int p;
+//     if(m==0)
+//     return (1);
+//     else if (m<1)
+//     printf("error");
+//     else
+//     p=n*power(n,m-1);
+//     return(p);
+// }
+
 #include<stdio.h>
-#include<math.h>
-int power(int,int);
+#include<conio.h>
+int Partition(int [],int,int);
+int QuickSort(int [],int, int );
+
 void main()
 {
-    int p,x,y;
-    printf("Enter the values of x anf y\n");
-    scanf("%d,%d",&x,&y);
-    p=power(x,y);
-    printf("%d is answer",p);
+    int a[10],i,lb,ub;
+    printf("Enter  elements of array :\n");
+    for(i=0;i<10;i++)
+    scanf("%d",&a[i]);
+    QuickSort(a,lb,ub);
+    printf("\nSorted elements are :\n");
+    for(i=0;i<10;i++)
+    printf("%d ",a[i]);
 }
-int power(int n,int m)
+int Partition(int a[],int lb,int ub)
 {
-    int p;
-    if(m==0)
-    return (1);
-    else if (m<1)
-    printf("error");
-    else
-    p=n*power(n,m-1);
-    return(p);
+    int t,down,up,p;
+    up=a[lb];
+    down=lb;
+    up=ub;
+    while(down<up)
+    {
+        while(p>=a[down]&&down<ub)
+        {
+            down++;
+            while(p<a[up])
+            up--;
+            if(down<up)
+            {
+                t=a[down];
+                a[down]=a[up];
+                a[up]=t;
+            }
+        }
+        a[lb]=a[up];
+        a[up]=p;
+        return up;
+    }
 }
+   int QuickSort(int a[],int lb,int ub )
+   {
+    int j;
+    if(lb<ub)
+    {
+        j=Partition(a,lb,ub);
+        QuickSort(a,lb,j-1);
+        QuickSort(a,j+1,ub);
+    }
+   }
